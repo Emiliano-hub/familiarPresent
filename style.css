@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  background: #ff7f6b;
+  background-image: url(./cat-6136130_1920.jpg);
+  width: 100%;
+  height: 100vh;
+}
+.congratulationContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+  height: 100%;
+}
+/* .congratulationContent figure {
+  width: 25%;
+} */
+.congratulationContent img {
+  width: 100%;
+}
+.buttonWelcome {
+  width: auto;
+  padding: 1%;
+  border-radius: 15px;
+  font-size: 1.5em;
+  position: absolute;
+  background: #d1351d;
+  color: white;
+  border: 0;
+}
+.buttonWelcome:hover {
+  background: #ff6a06;
+}
+.buttonWelcome:active {
+  background: #1cb4ac;
+}
+
+.catsContainer {
+  display: none;
+  grid-auto-rows: 50%;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+}
+.imgContainer {
+  margin: 0;
+  height: 80%;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.messageBtn {
+  width: auto;
+  padding: 1%;
+  border-radius: 15px;
+  font-size: 1.5em;
+  background: #d1351d;
+  color: white;
+  border: 0;
+}
+.messageBtn:hover {
+  background: #b3358d;
+}
+.messageBtn:active {
+  background: #1cb4ac;
+}
+button {
+  font-family: 'Fredoka One', cursive;
+}
+/* @media (max-width: 769px) {
+  .congratulationContent figure {
+    width: 40%;
+  }
+} */
+@media (max-width: 426px) {
+  /* .congratulationContent figure {
+    width: 70%;
+  } */
+  .buttonWelcome {
+    padding: 3%;
+  }
+  .catsContainer {
+    display: none;
+    grid-auto-rows: 33%;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .messageBtn {
+    width: auto;
+    padding: 3%;
+    border-radius: 15px;
+    font-size: 1.2em;
+    background: #d1351d;
+    color: white;
+    border: 0;
+  }
+}
+/* @media (max-width: 375px) {
+  .buttonWelcome {
+    padding: 3%;
+  }
+  .catsContainer {
+    display: none;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+} */
